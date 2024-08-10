@@ -3,13 +3,53 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Caio Douglas">
+        <meta name="description" content="Projeto feito para praticar meus conhecimentos em HTML, CSS e JavaSript.">
 
         <title>Conversor de Unidades</title>
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"  href="style.css">
     </head>
 
     <body>
-        
+        <div class="container">
+            <h1>Conversor de Unidades</h1>
+
+            <div class="campo">
+                <label for="inQuantidade">Quantidade:</label>
+                <input type="text" id="inQuantidade" placehold="0" required>
+            </div>
+
+            <div class="campo">
+                <label for="optDeUnidade">De:</label>
+                <select id="optDeUnidade" required>
+                    <option value="">Selecione uma unidade</option>
+                    <option value="m">Metro(s)</option>
+                    <option value="kg">Quilômetro(s)</option>
+                    <option value="cm">Centímetro(s)</option>
+                    <option value="mm">Milímetro(s)</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="optParaUnidade">De:</label>
+                <select id="optParaUnidade" required>
+                    <option value="">Selecione uma unidade</option>
+                    <option value="m">Metro(s)</option>
+                    <option value="kg">Quilômetro(s)</option>
+                    <option value="cm">Centímetro(s)</option>
+                    <option value="mm">Milímetro(s)</option>
+                </select>
+            </div>
+
+            <input class="btnConverter" type="button" value="Converter">
+
+            <div class="campo">
+                <label for="inResultado">Resultado:</label>
+                <input type="text" id="inResultado" disabled>
+            </div>
+            
+            <p class="outFeedback"></p>
+        </div>
     </body>
 </html>
